@@ -1,0 +1,78 @@
+import { Steps, Cards, Callout } from 'nextra/components'
+
+# Making a Basic Ticket Panel
+
+## Prerequisites 
+
+Before we begin please ensure you meet the following;
+<br />
+- [x] You have at least the `Manage Server` permission or higher
+- [x] You have invited and configured the basic settings, please see [Getting Started](../started)
+- [x] Have knowledge of managing and configuring discord and permissions
+
+<Steps>
+### Step 1: Create a Ticket Panel
+
+Go to the [Dashboard](https://tickety.top/dashboard) and once on your Discord servers overview, in the sidebar, click on `Ticket Panels` followed by `Create New Panel` in the main body when loaded.
+
+<video width="1348" height="674" controls preload="auto" >
+    <source src="/guide/starter/access_Dash1_createPan.mp4" type="video/mp4" />
+</video>
+
+### Step 2: Add Basic Details
+
+<Callout type="info">
+    To save on any potential lost effort in adding all your details, it is often best to put the core basics in and save the panel. From here the save button will become a floating button making saving frequently more convenient.
+</Callout>
+
+Lets fill out the following fields;<br />
+- **Panel Name**: A name which will allow you to identify it's purpose, for example `Support Panel`
+- **Support Roles**: These roles (you can choose multiple) will act as the support staff for this panel giving them both access to view and execute commands on any ticket opened.
+- **Panel Category**: Select the category in which you want all the tickets created. This is a category in Discord and not a text or voice channel.
+
+Now go to the top right corner of your browser (you will initially need to scroll up) and click `Create` which will save this panel.<br />
+From here we can go and add a little more to it and make it suit our purposes.
+
+### Step 3: Add a little more Glitter
+
+To keep this part of our guide easy we are going to add just a couple of more bits to make our support panel a little more personal to us.
+
+Head down to the `Panel Message` section. The `Panel Embed` is the information embedded and displayed in your channel and is what your user will see when being asked to open a ticket. So let us edit the title and description fields;
+
+- 1. **Contact Support** - This is the title
+- 2. **Hello and welcome to Mac's...** - This is the description
+
+![](/guide/starter/panel_Embed_basic.png)
+
+Next scroll a little further down to the `Welcome Message` area. The `Welcome Message` is the information that will be posted at the beginning of every ticket.
+
+> Awaiting Image
+
+That is it, click on `Save` and lets head to the next step.
+
+### Step 4: Display it in Discord
+
+So now we have our first panel made and some minor details changed to suit our needs, it is time to go and publish this in the Discord server. There 2 methods of doing this;
+- 1. **Send from the Dashboard** - To do this while inside of editing the panel you wish to send, scroll to the top and choose the channel you wish for the panel to appear from the drop down near the top right and then click on the `Send the Panel`.
+> Awaiting Image
+- 2. **Use the discord slash command** - To do this go to your Discord server and into the channel you want the panel in then type `/sendpanel` and enter. You will see a message only you can see with a drop down, choose your desired panel and bingo, your new panel is ready to go. Let's go try it out.
+> Awaiting Image
+
+### Step 5: Test the Panel
+
+To test the new ticket panel is really simple. Head to your Discord Server where the panel has just been posted and click on the `Create Ticket` button.
+You will see a confirmation message in the channel (which only you can see) and a new channel should appear in the category you have chosen as part of the basic settings.
+
+In the channel that has been created you can test posting, claiming and unclaiming and then closing to get a feel for what happens.
+
+</Steps>
+
+Congratulations you have now set up and tested a **Basic Ticket Panel** .
+
+## Next up
+<br />
+<Cards.Card
+    title="Making & Sending a Basic Application Panel"
+    href="/#"
+    arrow
+/>

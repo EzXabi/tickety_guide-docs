@@ -1,0 +1,79 @@
+import { Steps, Cards, Callout} from 'nextra/components'
+
+# Making a Basic Application Panel
+
+## Prerequisites
+
+Before we begin please ensure you meet the following;
+<br />
+- [x] You have at least the `Manage Server` permission or higher
+- [x] You have invited and configured the basic settings, please see [Getting Started](../started)
+- [x] Have knowledge of managing and configuring discord and permissions
+
+<Steps>
+### Step 1: Create a Application Panel
+
+Go to the [Dashboard](https://tickety.top/dashboard) and once on your Discord servers overview, in the sidebar, click on `Application Panels` followed by `Create New Panel` in the main body when loaded.
+
+### Step 2: Add Basic Details
+
+<Callout type="info">
+    To save on any potential lost effort in adding all your details, it is often best to put the core basics in and save the panel. From here the save button will become a floating button making saving frequently more convenient.
+</Callout>
+
+Lets fill out the following fields;
+- **Panel Name**: A name which will allow you to identify it's purpose, for example `Staff Application`
+- **Review Role**: These roles (you can choose multiple) allow members with the role to review, accept or decline an application.
+- **App Channel**: Select the channel in which you would like the application notifications posted ready for review.
+
+In order to save we first need to add 1 question to our new Application Panel, so lets scroll to the bottom and in the section named **__Questions__** we click on the light blue `Question 1` button.<br />
+Add your question in the field, leaving the options as they are for the moment before scrolling back to the top right corner and clicking on `Create` in order to save.
+
+
+### Step 3: Add a little more Glitter
+
+To keep this part of our guide easy we are going to add just a couple of more bits to make this Application Panel a little more personal to us.
+
+Go ahead and click on the panel we just created in order to edit it and head down to the section named `Panel Message` where you will find the `Panel Embed` information. This is the information that will be embedded in the panel and is what your user will see when this panel is published in a channel.<br />
+So let us begin by editing the title and description fields;
+- 1. **Apply to join the team** - This is the title
+- 2. **To apply to join our team...** - This is the description
+
+Next let's add another couple of questions, after all this is supposed to be an application. Scroll back to the bottom and this time click the `Create a Question` button twice to add 2 more questions.<br />
+For the `Question 2` lets turn on the Multiple Choice question. To add options for your multiple choice we simply write in the **Choices** field and then press the Return (Enter) key to submit it and add a new option.
+<Callout type="info">
+    Don't worry if you change your mind and wish to order your options slightly differently. You can simply drag and drop  the options to re-order them. **However** if you make a typo or need to edit the wording for an option you will need to delete it and add it again.
+</Callout>
+Once you have your option's sorted we have 2 more settings, **Minimum Choices Required** sets the minimum number of options a user needs to select where as **Maximum Choices Required** limits the number of choices to this as a maximum. So if you wish users to choose between 2-4 options the settings would be;
+- **Minimum Choices Required**: 2
+- **Maximum Choices Required**: 4
+
+Now for question 3 let us just ask a regular question but one which requires a slightly longer answer, maybe "Please tell us about any experience you have and why you feel your right for this role".
+
+Go ahead and save and let us continue.
+
+### Step 4: Display it in Discord
+
+So now we have our first panel made and some minor details changed to suit our needs, it is time to go and publish this in the Discord server. There 2 methods of doing this;
+- 1. **Send from the Dashboard** - To do this while inside of editing the panel you wish to send, scroll to the top and choose the channel you wish for the panel to appear from the drop down near the top right and then click on the `Send the Panel`.
+> Awaiting Image
+- 2. **Use the discord slash command** - To do this go to your Discord server and into the channel you want the panel in then type `/sendapplication` and enter. You will see a message only you can see with a drop down, choose your desired panel and bingo, your new panel is ready to go. Let's go try it out.
+> Awaiting Image
+
+### Step 5: Test the Panel
+
+To test the new Application Panel is really simple. Head to your Discord Server where the panel has just been posted and click on the `Start Application` button.
+You will see a confirmation message in the channel (which only you can see) that a new application has been started in DM's (direct messages) and has a link which when clicked takes you directly to the correct DM.
+
+Here you have 2 options, a green `Start` button or red `Cancel` button. If we click start you will see you get a new message asking you the first question we set. All we need to do is type out text answers and send, or choose from the provided drop down if multiple choice. Once you have finished the last question the application is automatically finished and posted int eh channel you set back in "Step 2".
+</Steps>
+
+Congratulations you have now set up and tested a **Basic Application Panel** .
+
+## Next up
+<br />
+<Cards.Card
+    title="Available / Commands in Discord"
+    href="/docs/started/commands"
+    arrow
+/>
