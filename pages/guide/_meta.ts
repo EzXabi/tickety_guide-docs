@@ -5,5 +5,6 @@ export default {
             pagination: false
         }
     },
-    personalizer: "Custom Bot"
+    personalizer: "Custom Bot",
+    basic_ticket: "Basic Ticket"
 }

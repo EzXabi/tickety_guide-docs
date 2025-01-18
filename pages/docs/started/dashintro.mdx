@@ -1,0 +1,134 @@
+import { Cards, Callout, Tabs, Table, Td, Th, Tr } from 'nextra/components'
+
+# An Introduction to our Dashboard
+
+<Callout type="error">
+    This page is not yet completed fully.
+</Callout>
+
+Now that we have the Tickety bot added to the Discord Server, let us take a few moments to explore the [Dashboard](https://tickety.top/dashboard). Once you have logged in via the [Dashboard](https://tickety.top/dashboard) link you will see the Sidebar Menu on the left.
+
+### Sidebar Menu
+Our dashboard has been designed and layed out in such a manner to keep things quick, simple and easy to learn. With this said, our sidebar menu is fundamentally split into 3 main sections;
+- **Tickety** - These sets of menu links take you to configurations that generally affect the entire bot, such as **Plans** which allows you to subscribe to premium if you wish, **Personalizer** which is to give the bot your own personal look or **Auto Responders** which are triggers that cause an automated response from Tickety.
+- **Tickets** - These sets of menu links are entirely to do with the ticket system of Tickety.
+- **Applications** - These sets of menu links in turn are entirely to do with the applications system of Tickety.
+
+You can find more information about each section using the tabs below.
+### Tabs
+<Tabs items={['Tickety', 'Tickets', 'Applications']}>
+    <Tabs.Tab>
+        ### Overview
+        These are just some basic bits of info and stats regarding your tickets, which show how many tickets have been created and closed (both life time and in the last 24 hours) and how many have been renamed and claimed (again both lifetime and in the last 24 hours).
+
+        > Awaiting Image
+
+        ### Plans
+        Here you can subscribe to any one of 3 very afforable and cost effective plans for premium. If you also require our custom bot or **Personaliser** please make sure it is selected when completing checkout. It will be listed as a seperate item.
+
+        > Awaiting Image
+
+        ### Personalizer ⭐
+        If you have purchased the Custom Bot addon alongside your premium subscription this is where you would use the Bot Token in order to use your own custom bot.
+        Before changing anything here, we highly recomend you read our guide on setting up the **Personliser**.
+
+        ### Settings
+        These are some general settings for the entire Tickety bot in general and have been covered on the getting started page.
+
+        <Table>
+            <thead>
+                <Tr>
+                    <Th>Setting</Th>
+                    <Th>Options</Th>
+                    <Th>Description</Th>
+                </Tr>
+            </thead>
+            <tbody>
+                <Tr>
+                    <Td>Admin Role</Td>
+                    <Td>All your Discord roles</Td>
+                    <Td>This setting will give the set role the ability to execute all / commands and view all server tickets.</Td>
+                </Tr>
+                <Tr>
+                    <Td>Language</Td>
+                    <Td>English, Dutch, Norwegian, Polish, Spanish, Czech, German, French, Portugese, Russian, Italian, Danish, Chinese, Arabic</Td>
+                    <Td>This sets the language of the uneditable bot messages.</Td>
+                </Tr>
+                <Tr>
+                    <Td>Commands Cooldown</Td>
+                    <Td>0 = No cooldown</Td>
+                    <Td>Forced delay between being able to execute commands. Setting is in **Seconds**</Td>
+                </Tr>
+                <Tr>
+                    <Td>⭐Customisation</Td>
+                    <Td>Change Default Message Footer & Embed Colour</Td>
+                    <Td>Allows you to change the default message footer `Tickety | Tickety.top` to something custom. Additionally you can change the embed colour to any hex value. This is a ⭐Premium Feature.</Td>
+                </Tr>
+                <Tr>
+                    <Td>Logging</Td>
+                    <Td>Enabled / Disabled</Td>
+                    <Td>Select any of your Discord servers channels in which to post logs (when enabled) for various actions, such as new ticket created, ticket claimed, ticket closed and more.</Td>
+                </Tr>
+                <Tr>
+                    <Td>⭐Advanced Settings</Td>
+                    <Td>Enabled / Disabled</Td>
+                    <Td>Enable or disable the stats field on the /userinfo & /serverinfo commands. This is a ⭐Premium Feature.</Td>
+                </Tr>
+            </tbody>
+        </Table>
+
+        ### Auto Responders
+        These are automatic responses from tickety based on the triggers configured.
+
+        For example if you chose the trigger to be `How old are you?` and a standard autoresponder replay of `Do not ask for person details please.` with an 85% match rating then any time someone in discord asks
+
+        ```how old are you```
+         
+         Tickety would respond with a replay
+
+         ```Do not ask for personal details please.```
+
+    </Tabs.Tab>
+    <Tabs.Tab> 
+        ### Configuration
+
+        Inside of configuration you have 5 more categories to choose from to configure and set some more general settings for the ticket system.
+
+        - **__General Settings__**: Just a couple more general settings such as the default message shown in a drop down menu.
+        - **__Close Settings__**: Some tweaks for ticket closing options, for example should the user get a DM witha close message or do you require a reason to close tickets.
+        - **__Ticket Command__**: Embed message & style and panel selector for which panels can be opened with the `/new` command.
+        - **__Autoclose Settings__**: Some ticket autoclose options such as timings since message and the ticket auto closing & reminders.
+        - **__Request Close Command__**: Adjust the wording and styling for the `/requestclose` command.
+
+        ### Ticket Panels
+
+        This is where your ticket panels are located and inside each of which you can configure and style them.
+
+        ### Ticket Logs
+
+        This is where all of the ticket transcripts are located for each panel you have them enabled on.
+
+        
+    </Tabs.Tab>
+    <Tabs.Tab> 
+        ### Configuration 
+        
+        Inside configuration we have just 2 more options.
+        - **__General Settings__**: Here you can edit your `Accept` and `Deny` reasons.
+        - **__Application Command__**: You can list which application panels to allow with the `new` command as well as edit the embed message & style.
+
+        ### Application Panels
+
+        This is where Application Panels are located and inside each of which you can configure and style them.
+        
+    </Tabs.Tab>
+</Tabs>
+
+## Next Up
+<br />
+
+<Cards.Card
+    title="Making & Sending a Basic Ticket Panel"
+    href="/docs/started/basicticket"
+    arrow
+/>
