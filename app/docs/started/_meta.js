@@ -3,7 +3,7 @@ export default {
     basicticket: 'Tickets & Panels',
     basicapplication: 'Applications & Panels',
     commands: 'Available Commands',
-    personaliser: {
+    personalizer: {
         title: 'Custom Bot ⭐',
         theme: {
             pagination: false
