@@ -1,4 +1,4 @@
 export default {
     wrappers: "Wrappers",
-    events: "Events"
+    events: "Events",
 }

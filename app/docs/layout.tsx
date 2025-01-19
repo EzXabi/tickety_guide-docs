@@ -43,14 +43,11 @@ export default async function DocsLayout({ children }) {
         <Layout
           navbar={navbar}
           pageMap={await getPageMap()}
-          darkMode
+          darkMode={false}
           nextThemes={{
             defaultTheme: 'dark',
           }}
           navigation={true}
-          sidebar={{
-            defaultMenuCollapseLevel: 1
-          }}
           footer={<></>}
           editLink={<></>}
           docsRepositoryBase={undefined}
